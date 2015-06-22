@@ -100,5 +100,10 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
+# Install utils
+brew install tmux
+
 # Remove outdated versions from the cellar.
 brew cleanup
+
+
