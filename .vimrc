@@ -1,7 +1,19 @@
 " Use the Solarized Dark theme
-set background=dark
+set background=light
 colorscheme solarized
 let g:solarized_termtrans=1
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Vundle Bundles
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " Make Vim more useful
 set nocompatible
@@ -94,6 +106,11 @@ endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
+
+" Map custom keys here
+map <C-n> :NERDTreeToggle<CR>
+nmap <c-s> :w<cr>
+imap <c-s> <esc>:w<cr>
 
 " Automatic commands
 if has("autocmd")
