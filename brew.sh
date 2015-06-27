@@ -102,6 +102,7 @@ brew install zopfli
 
 # Install utils
 brew install tmux
+brew install virtualhost.sh
 
 # Remove outdated versions from the cellar.
 brew cleanup

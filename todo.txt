@@ -1,3 +1,6 @@
 Add vundle
 Install automatically all vundle plugins
-
+Add ctrl+s support for vim (modify .osx for configuration)
+Remove line endings and only add them when there are spaces detected
+Add node and npm
+Add node global modules
